@@ -58,9 +58,9 @@ reset="\033[0m"
 lc="${reset}${bold}${magenta}"        # labels
 nc="${reset}${bold}${cyan}"        # user and hostname
 ic="${reset}"                       # info
-c0="${reset}${bold}${green}"               # first color
-c1="${reset}${bold}${blue}"               # second color
-c2="${reset}${bold}${yellow}"              # third color
+c0="${reset}${green}"               # first color
+c1="${reset}${blue}"               # second color
+c2="${reset}${yellow}"              # third color
 
 ## OUTPUT
 
