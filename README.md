@@ -9,13 +9,14 @@ I modified the OpenWrt version myself, and the Android version was [initially cr
 
 ---
 
-Screenshots:
+# Screenshots:  
 **OpenWrt**: <p align="center"><img src="https://raw.githubusercontent.com/bongochong/ufetch-mods/main/screenshots/ss-owrt.png" alt="OpenWrt"></p>
   
 **Android**: <p align="center"><img src="https://raw.githubusercontent.com/bongochong/ufetch-mods/main/screenshots/ss-termux.jpg" alt="Android"></p>
 
 ---
 
+# Note:  
 All of this work is based on the original ufetch by jschx, who has stipulated that the following notice be included in modifications of his work:  
 
 *Copyright (c) 2018, 2019, 2020 Joe Schillinger <me@schil.li>*  
