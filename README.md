@@ -5,7 +5,7 @@ If you know what the ufetch script is, then you don't need any instructions. Thi
   
 So far there is [one for **OpenWrt**](https://github.com/bongochong/ufetch-mods/blob/main/ufetch-owrt.sh), and [one for **Android** (*Termux*)](https://github.com/bongochong/ufetch-mods/blob/main/ufetch-termux.sh). More ufetch forks may appear, and additions are encouraged. Simply make a pull request, and - provided it works - I will merge your commits forthwith, including whatever credits you wish to be specified.
   
-I modified the OpenWrt version myself, and the Android version was [initially created here](https://gitlab.com/jschx/ufetch/-/merge_requests/65) (by the gitlab user [bulatovv](https://gitlab.com/bulatovv)), though I made some minor improvements to it. The colors may not be to your liking, but they are easily changed in the scripts themselves.
+I created the OpenWrt version myself, and the Android version was [initially created here](https://gitlab.com/jschx/ufetch/-/merge_requests/65) (by the gitlab user [bulatovv](https://gitlab.com/bulatovv)), though I made some minor improvements to it. The colors may not be to your liking, but they are easily changed in the scripts themselves.
 
 ---
 
