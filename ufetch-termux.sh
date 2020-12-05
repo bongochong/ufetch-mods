@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# ufetch-termux - tiny system info for termux
+# ufetch-termux - tiny system info for Termux on Android
 
 ## INFO
 
