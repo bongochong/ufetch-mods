@@ -7,6 +7,11 @@ So far there is [one for **OpenWrt**](https://github.com/bongochong/ufetch-mods/
   
 I created the OpenWrt version myself, and the Android version was [initially created here](https://gitlab.com/jschx/ufetch/-/merge_requests/65) (by the gitlab user [bulatovv](https://gitlab.com/bulatovv)), though I made some minor improvements to it. The colors may not be to your liking, but they are easily changed in the scripts themselves.
 
+<p align="center">
+  <img src="https://i.imgur.com/tmiMGph.png">
+  <img src="https://i.imgur.com/yZ6NnIW.png">
+</p>
+
 ---
 
 ## Screenshots  
