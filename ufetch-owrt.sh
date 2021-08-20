@@ -24,8 +24,8 @@ elif [ -f "${HOME}/.vnc/xstartup" ]; then
 	ui="$(tail -n 1 "${HOME}/.vnc/xstartup" | cut -d ' ' -f 1)"
 	uitype='WM'
 else
-	ui='N/A'
-	uitype='CLI'
+	ui='CLI'
+	uitype='Shell'
 fi
 
 ## DEFINE COLORS
