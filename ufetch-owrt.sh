@@ -14,30 +14,18 @@ shell="$(basename "$SHELL")"
 
 ## UI DETECTION
 
-if [ -n "${DE}" ]; then
-	ui="${DE}"
-	uitype='DE'
-elif [ -n "${WM}" ]; then
-	ui="${WM}"
+if [ -f "${HOME}/.xinitrc" ]; then
+	ui="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
 	uitype='WM'
-elif [ -n "${XDG_CURRENT_DESKTOP}" ]; then
-	ui="${XDG_CURRENT_DESKTOP}"
-	uitype='DE'
-elif [ -n "${DESKTOP_SESSION}" ]; then
-	ui="${DESKTOP_SESSION}"
-	uitype='DE'
-#elif [ -f "${HOME}/.xinitrc" ]; then
-#	ui="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
-#	uitype='WM'
-#elif [ -f "${HOME}/.xsession" ]; then
-#	ui="$(tail -n 1 "${HOME}/.xsession" | cut -d ' ' -f 2)"
-#	uitype='WM'
-#elif [ -f "${HOME}/.vnc/xstartup" ]; then
-#	ui="$(tail -n 1 "${HOME}/.vnc/xstartup" | cut -d ' ' -f 1)"
-#	uitype='WM'
+elif [ -f "${HOME}/.xsession" ]; then
+	ui="$(tail -n 1 "${HOME}/.xsession" | cut -d ' ' -f 2)"
+	uitype='WM'
+elif [ -f "${HOME}/.vnc/xstartup" ]; then
+	ui="$(tail -n 1 "${HOME}/.vnc/xstartup" | cut -d ' ' -f 1)"
+	uitype='WM'
 else
 	ui='N/A'
-	uitype='UI'
+	uitype='CLI'
 fi
 
 ## DEFINE COLORS

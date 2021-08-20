@@ -26,15 +26,15 @@ elif [ -n "${XDG_CURRENT_DESKTOP}" ]; then
 elif [ -n "${DESKTOP_SESSION}" ]; then
 	ui="${DESKTOP_SESSION}"
 	uitype='DE'
-#elif [ -f "${HOME}/.xinitrc" ]; then
-#	ui="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
-#	uitype='WM'
-#elif [ -f "${HOME}/.xsession" ]; then
-#	ui="$(tail -n 1 "${HOME}/.xsession" | cut -d ' ' -f 2)"
-#	uitype='WM'
-#elif [ -f "${HOME}/.vnc/xstartup" ]; then
-#	ui="$(tail -n 1 "${HOME}/.vnc/xstartup" | cut -d ' ' -f 1)"
-#	uitype='WM'
+elif [ -f "${HOME}/.xinitrc" ]; then
+	ui="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+	uitype='WM'
+elif [ -f "${HOME}/.xsession" ]; then
+	ui="$(tail -n 1 "${HOME}/.xsession" | cut -d ' ' -f 2)"
+	uitype='WM'
+elif [ -f "${HOME}/.vnc/xstartup" ]; then
+	ui="$(tail -n 1 "${HOME}/.vnc/xstartup" | cut -d ' ' -f 1)"
+	uitype='WM'
 else
 	ui='AOSP-based'
 	uitype='UI'
