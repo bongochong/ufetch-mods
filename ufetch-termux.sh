@@ -7,7 +7,7 @@
 user="$(whoami)"
 host="$(getprop net.hostname)"
 os="$(uname -o) $(getprop ro.build.version.release)"
-kernel="$(uname -sr | cut -c -12)"
+kernel="$(uname -sr)"
 uptime="$(uptime | awk -F, '{sub(".*up ",x,$1);print $1}' | sed -e 's/^[ \t]*//')"
 packages="$(pkg list-installed 2> /dev/null | tail -n +2 | wc -l)"
 shell="$(basename "$SHELL")"
