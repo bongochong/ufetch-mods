@@ -5,7 +5,8 @@
 ## INFO
 
 user="$(whoami)"
-host="$(getprop net.hostname)"
+# host="$(getprop net.hostname)" ROOT ONLY
+host="$(uname -n)"
 os="$(uname -o) $(getprop ro.build.version.release)"
 kernel="$(uname -sm)"
 uptime="$(uptime | awk -F, '{sub(".*up ",x,$1);print $1}' | sed -e 's/^[ \t]*//')"
